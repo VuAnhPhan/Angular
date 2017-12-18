@@ -1,0 +1,19 @@
+<h3>
+    Router Views:</h3>
+<button mat-button [matMenuTriggerFor]="menu">Menu</button>
+<mat-menu #menu="matMenu">
+    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+        <button mat-menu-item>Home</button>
+    </a>
+    <a routerLink="/my-form" routerLinkActive="active">
+        <button mat-menu-item>My Form</button>
+    </a>
+    <a routerLink="/login" routerLinkActive="active">
+    <button mat-menu-item>Login</button>
+    </a>
+    <a routerLink="/employee" routerLinkActive="active">
+    <button mat-menu-item>EmployeeList By Using Service</button>
+    </a>
+</mat-menu>
+
+<router-outlet></router-outlet>
